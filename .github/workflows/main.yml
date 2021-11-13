@@ -52,6 +52,7 @@ jobs:
                     - "8.0"
         env:
             PHP_VERSION: ${{ matrix.php }}
+            API_KEY: ${{ secrets.api_key }}
         steps:
             -
                 uses: actions/checkout@v2
